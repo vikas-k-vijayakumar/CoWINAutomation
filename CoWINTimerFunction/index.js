@@ -1,4 +1,6 @@
 module.exports = async function (context, myTimer) {
+    //Required libraries
+    const axios = require('axios');
     var timeStamp = new Date().toISOString();
     
     if (myTimer.isPastDue)
